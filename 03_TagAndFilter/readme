@@ -1,0 +1,25 @@
+Exécuter tout => Fontionnal + Non Fonctionnal
+
+Executer dans eclipse :
+	Click-droit sur le projet -> Run Configuration
+	Select Run all test ... -> configure 
+	Inclure et/ exclure les tags
+
+Puis executer
+
+===========================
+Autre methode
+===========================
+
+Configurer le plugin maven-surefire-plugin
+
+Changer le pom.xml en ajoutant dans le plugin maven-surefire-plugin
+
+<configuration>
+    <properties>
+        <includeTags>functional</includeTags>
+        <excludeTags>non-functional</excludeTags>
+    </properties>
+</configuration>
+
+Puis executer
