@@ -25,10 +25,11 @@ public class Beta {
 	/*// 4.- Forma - Eliminamos la palabra return
 	IAlpha alpha = (int num1, int num2) -> num1 + num2;*/
 	
-	// 5.- Forma - Lambda, a partir de Java 8
-	BiFunction<Integer, Integer, Integer> alpha = (Integer num1, Integer num2) -> num1 + num2;
+	/*// 5.- Forma - Lambda, a partir de Java 8
+	BiFunction<Integer, Integer, Integer> alpha = (Integer num1, Integer num2) -> num1 + num2;*/
 	
-	public void calculer(int a, int b) {
-		System.out.println("La somme est "+ alpha.apply(a, b));
+	//6.- Forma - Ejemplo mas avanzado de Lambda
+	public void calculer(BiFunction<Integer, Integer, Integer> alpha) {
+		System.out.println("Le resultat est "+ alpha.apply(5, 37));
 	}
 }
