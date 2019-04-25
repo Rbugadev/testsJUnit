@@ -5,7 +5,8 @@ public class MyMain {
 	public static void main(String[] args) {
 		
 		Beta b = new Beta();
-		b.calculer(5, 37);
+		b.calculer((Integer num1, Integer num2) -> num1 + num2);
+		b.calculer((Integer num1, Integer num2) -> num1 * num2);
 	}
 
 }
