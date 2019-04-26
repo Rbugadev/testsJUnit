@@ -20,6 +20,13 @@ public class AutomatiqueScript {
 			System.out.println("Je suis bien dans Google page");
 		}
 		
+		Thread.sleep(2000);
+		driver.navigate().to("https://www.bing.com");
+		
+		if (driver.getTitle().equalsIgnoreCase("Bing")) {
+			System.out.println("Je suis bien chez Bing");
+		}
+		
 		Thread.sleep(5000);
 		driver.close();
 
